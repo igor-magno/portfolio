@@ -3,8 +3,8 @@ import { ReactNode } from "react"
 import { GiSmartphone } from "react-icons/gi"
 
 const NavConteiner = (props: { children: ReactNode }) => <div
-    className="w-full border-b border-inherit shadow-md flex">
-    <ul className="flex gap-4 pl-8">
+    className="w-full border-b border-inherit shadow-md flex flex-wrap">
+    <ul className="flex flex-wrap gap-4 pl-8">
         {props.children}
     </ul>
     <div className="w-full flex justify-end items-center pr-12">

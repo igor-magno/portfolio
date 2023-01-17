@@ -13,8 +13,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className='h-screen flex flex-col font-mono bg-slate-800 text-slate-50'>
-        <NavBar />
+      <body className=''>
         {children}
       </body>
     </html>
