@@ -2,8 +2,6 @@ import { TbBrandCss3, TbBrandHtml5, TbBrandJavascript, TbBrandNextjs, TbBrandPhp
 import { FaDocker, FaGitAlt, FaGithub, FaLaravel, FaNode, FaNodeJs, FaReact } from 'react-icons/fa'
 import { SiAmazonaws, SiJquery, SiMysql, SiNestjs, SiTypescript, SiXamarin } from 'react-icons/si'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
-import { } from 'react-icons/tb'
-import { ReactNode } from 'react'
 
 const PortfolioFooter = () => <section id="copy" className='w-full p-12 md:p-16 bg-white text-black flex items-center justify-center'>
     <p>Criado por <a href="#">Igor Magno</a> © 2023 – Todos os direitos reservados</p>
