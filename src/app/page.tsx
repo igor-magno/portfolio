@@ -1,7 +1,8 @@
 import { TbBrandCss3, TbBrandHtml5, TbBrandJavascript, TbBrandNextjs, TbBrandPhp, TbCSharp } from 'react-icons/tb'
-import { FaDocker, FaGitAlt, FaGithub, FaLaravel, FaNode, FaNodeJs, FaReact } from 'react-icons/fa'
-import { SiAmazonaws, SiJquery, SiMysql, SiNestjs, SiTypescript, SiXamarin } from 'react-icons/si'
+import { FaDocker, FaGitAlt, FaGithub, FaLaravel, FaNode, FaReact } from 'react-icons/fa'
+import { SiAmazonaws, SiGithub, SiJquery, SiLinkedin, SiMysql, SiNestjs, SiTypescript, SiWhatsapp, SiXamarin } from 'react-icons/si'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
+import { MdSmartphone } from 'react-icons/md'
 
 const PortfolioFooter = () => <section id="copy" className='w-full p-12 md:p-16 bg-white text-black flex items-center justify-center'>
     <p>Criado por <a href="#">Igor Magno</a> © 2023 – Todos os direitos reservados</p>
@@ -11,7 +12,7 @@ const PagePortfolio = () => <>
     <main className='font-mono'>
         <div className='w-full h-16 border-b fixed z-20 top-0 left-0 bg-slate-50 text-black'>
             <ul className='h-full flex flex-wrap items-ecnter items-center justify-center md:justify-end md:pr-24 gap-4'>
-                <li><a className='select-none cursor-pointer md:text-xl' href='#home'>PRINCIPAL</a></li>
+                <li><a className='select-none cursor-pointer md:text-xl' href='#home'>INICIO</a></li>
                 <li><a className='select-none cursor-pointer md:text-xl' href='#about'>SOBRE</a></li>
                 <li><a className='select-none cursor-pointer md:text-xl' href='#skils'>CONHECIMENTOS</a></li>
                 <li><a className='select-none cursor-pointer md:text-xl' href='#projects'>PROJETOS</a></li>
@@ -25,6 +26,16 @@ const PagePortfolio = () => <>
                 <h1 className='md:text-4xl font-bold tracking-wide'>IGOR MAGNO</h1>
                 <h2 className='md:text-3xl font-bold tracking-wide underline'>DESENVOLVEDOR FULL STACK</h2>
                 <p className='md:text-2xl font-medium tracking-wide'>WEB | MOBILE </p>
+                <div className='flex gap-4 py-6'>
+                    <a href='https://github.com/igor-magno' className='flex items-center justify-center gap-1 border border-white rounded-lg px-2 hover:border-orange-500 hover:text-orange-500 select-none'>
+                        <SiGithub />
+                        <span>GitHub</span>
+                    </a>
+                    <a href='https://www.linkedin.com/in/igor-magno-72853619a' className='flex items-center justify-center gap-1 border border-white rounded-lg px-2 hover:border-orange-500 hover:text-orange-500 select-none'>
+                        <SiLinkedin />
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
             </article>
         </section>
 
@@ -105,12 +116,19 @@ const PagePortfolio = () => <>
                     <h2 className='md:text-3xl font-bold tracking-wide'>CONTATO</h2>
                 </div>
                 <div className='w-full h-full flex justify-center gap-8'>
-                    <ul>
-                        <li>
+                    <ul className='gap-2'>
+                        <li className='w-full flex justify-center'>
                             <span>igormagno.dev@gmail.com</span>
                         </li>
-                        <li>
+                        <li className='w-full flex items-center justify-center gap-2'>
+                            <MdSmartphone />
                             <span>+55 38 9987-5695</span>
+                        </li>
+                        <li className='w-full flex items-center justify-center'>
+                            <a href='https://api.whatsapp.com/send?phone=3899875695&text=' className='flex items-center justify-center gap-2 select-none hover:text-orange-500'>
+                                <SiWhatsapp />
+                                <span>Whatsapp</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
